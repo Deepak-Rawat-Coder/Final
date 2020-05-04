@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello Board</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <header id="header"> -->
+        <nav id="navbar">
+            <div>
+                <ul>
+                    <li class="margin">
+                        <i class="fas fa-home"></i>
+                    </li>
+                    <li class="margin">
+                        <a href="">
+                            <i class="fas fa-th-list"></i>Boards
+                        </a>
+                    </li>
+                    <li>
+                        <input type="text">
+                    </li>
+                </ul>
+            </div>
+            <div style="margin-left: -200px;">
+                <h1>Tralala</h1>
+            </div>
+            <div>
+                <ul>
+                    <li class="margin">
+                        <i class="fas fa-plus"></i>
+                    </li>
+                    <li class="margin">
+                        <i class="fas fa-user"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <!-- </header> -->
+    <section class="showcase">
+        <div class="menu">
+            <span>Frontend Training</span>
+            <div>
+                <a href=""><i class="fas fa-ellipsis-v"></i> Show Menu</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="to_do content flex">
+                <div class="head">
+                    <p>To Do</p><p>...</p>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Learn HTML" readonly><i class="task-edit fas fa-pencil-alt pointer"></i>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Learn CSS" readonly><i class="task-edit fas fa-pencil-alt pointer"></i>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Learn JavaScript"readonly><i class="task-edit fas fa-pencil-alt pointer"></i>
+                </div>
+                <a href="" id="to_do_card" onclick="cardToogle1(); return false;">+ Add another card</a>
+                <a href="" id="to_do_card_form" style="display: none;">+ Add Card form</a>
+            </div>
+            <div class="doing content flex">
+                <div class="head">
+                    <p>Doing</p><p>...</p>
+                </div>
+                <input type="text" placeholder="Prepare resume">
+                <br/>
+                <textarea name="" id="" cols="30" rows="4" placeholder="Enter a title for this card . . ."></textarea>
+                <br/>
+                <button>Add Card</button>
+                <i class="fas fa-2x fa-times"></i>
+            </div>
+            <div class="testing content flex">
+                <div class="head">
+                    <p>Testing/Verifying</p><p>...</p>
+                </div>
+                <input type="text" placeholder="Twitter app frontend">
+                <br/>
+                <a href="" id="testing_card" onclick="cardToogle2(); return false;">+ Add another card</a>
+                <a href="" id="testing_form" style="display: none;">+ Add Card form</a>
+            </div>
+            <div class="deploying content flex">
+                <div class="head">
+                    <p>Deploying</p><p>...</p>
+                </div>
+                <input type="text" placeholder="Twitter app backend">
+                <br/>
+                <a href="" id="deploying_card" onclick="cardToogle3(); return false;">+ Add another card</a>
+                <a href="" id="deploying_form" style="display: none;">+ Add Card form</a>
+            </div>
+            <div class="done content flex">
+                <div class="head">
+                    <p>Done</p><p>...</p>
+                </div>
+                <a href="">+ Add card</a>
+            </div>
+            <div class="add_list content flex">
+                <a href="" id="addlist" onclick="toogle(); return false;">+ Add another list</a>
+                <a href="" id="listform" style="display: none;">+ Add List form</a>
+            </div>
+            <div class="listtitle content flex">
+                <textarea name="" id="" cols="30" rows="4" placeholder="Enter list title. . ."></textarea>
+                <br/>
+                <button>Add List</button>
+                <i class="fas fa-2x fa-times"></i>
+            </div>
+        </div>
+    </section>
+    <script>
+        function toogle(){
+            document.getElementById("addlist").style.display="none";
+            document.getElementById("listform").style.display="block";
+        }
+
+        function cardToogle1(){
+            document.getElementById("to_do_card").style.display="none";
+            document.getElementById("to_do_card_form").style.display="block";
+        }
+
+        function cardToogle2(){
+            document.getElementById("testing_card").style.display="none";
+            document.getElementById("testing_form").style.display="block";
+        }
+
+        function cardToogle3(){
+            document.getElementById("deploying_card").style.display="none";
+            document.getElementById("deploying_form").style.display="block";
+        }
+    </script>
+</body>
+</html>

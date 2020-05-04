@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,700;1,700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+body{
+    background-image: url(https://wallpapertag.com/wallpaper/full/1/3/7/473066-free-rain-on-window-wallpaper-1920x1200.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.flex{
+    flex-shrink: 0;
+    flex-basis: 210px;
+}
+
+/* Navbar */
+#navbar{
+    background-color: rgba( 64, 144, 172, 0.65 );
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+
+#navbar a{
+    color:white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+#navbar div ul{
+    list-style: none;
+    display: flex;
+}
+
+#navbar div ul li{
+    margin-right: 10px;
+    margin-top: 11px;
+}
+
+#navbar div ul li a{
+    background-color: rgba( 64, 144, 172, 1 );
+    padding: 6px;
+}
+
+#navbar div ul li a:hover{
+    opacity: 0.7;
+}
+
+#navbar div ul li i{
+    padding: 7px;
+    background-color: rgba( 64, 144, 172, 1 );
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#navbar div ul li i:hover{
+    opacity: 0.7;
+}
+
+#navbar div h1{
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.3rem;
+    margin-top: 11px;
+}
+
+#navbar input{
+    background-color: rgba( 64, 144, 172, 1 );
+    border: none;
+    width: 150px;
+}
+
+#navbar input:focus{
+    background-color: white;
+}
+/* Menu */
+
+.menu{
+    color: white;
+    background-color: rgba( 128, 128, 128, 0.3 );
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    font-size: .9rem;
+    font-weight: 100;
+}
+
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    opacity: 0.7;
+}
+
+
+
+
+/* Showcase */
+
+.container{
+    display: flex;
+    height: 85.5vh;
+    overflow: auto;
+}
+
+.head{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 15px;
+}
+
+.content{
+    background-color:#e0e1e2;
+    width: 23%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+
+p{
+    font-weight: bold;
+}
+
+input{
+    margin-bottom: 10px;
+    padding: 7px;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+textarea{
+    margin-bottom: 10px;
+    padding: 7px;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+}
+
+.container .content a{
+    text-decoration: none;
+    color: gray;
+}
+
+.container .content a:hover{
+    color: rgba(192, 187, 187, 0.932);
+}
+.to_do{
+    margin-left: 30px;
+}
+
+.listtitle{
+    margin-right: 30px;
+}
+
+.container .to_do .input{
+    position: relative;
+}
+
+.container .to_do .input i{
+    display: none;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    cursor: pointer;
+    color: gray;
+}
+
+.container .to_do .input input:hover + i{
+    display: block;
+}
+
+.container .to_do .input input:hover{
+    background-color: rgba(255, 255, 255, 0.637);
+    color: gray;
+}
+
+.container .content input:hover{
+    background-color: rgba(255, 255, 255, 0.637);;
+}
+
+.container .doing button,
+.container .listtitle button{
+    padding: 8px;
+    border: none;
+    font-size: 1.2rem;
+    background-color: olive;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.container .doing button:hover,
+.container .doing i:hover,
+.container .listtitle button:hover,
+.container .listtitle i:hover{
+    opacity: 0.7;
+}
